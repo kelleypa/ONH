@@ -12,7 +12,16 @@ Reference of RT:
 * Tavakoli, M., et al. "Radon transform technique for linear structures detection: application to vessel detection in fluorescein angiography fundus images." 2011 IEEE Nuclear Science Symposium Conference Record. IEEE, 2011.
 
 3) ONH_Training.m performs supervised learning .One of our machine learning implements supervised learning, which is comprised of computing first the bag of features then categorizing this bag of features using a support vector machine (SVM).
+
+![image](https://github.com/kelleypa/ONH/assets/107891103/9d375086-9eb9-4290-ad20-fe33af150b16)
+
+Setting aside 20% of the training set as the training test set, a validation accuracy of 0.9282 was achieved. This means that out of the 2716 candidate images, the trained classifier tested 543 candidates to achieve an accuracy of about 92%. When viewing the confusion matrix which reveals the percentage of true and false positive detections of the ONH vs nonONH, it equally missed ONHs and nonONHs at 8% of the time. But with multiple multiple candidates that contain part or the whole ONH, this is acceptable error since the other candidates are likely to be spotted. 
+
+![image](https://github.com/kelleypa/ONH/assets/107891103/f3ef9d20-daee-4b7a-99ee-6833627ec795)
+
 4) ONH_TrainStackedAutoencoders performs unsupervised deep learning.
+
+![neuralnet](https://github.com/kelleypa/ONH/assets/107891103/f98cf840-9b17-4d41-9c78-374c9af1497f)
 
   1) Input Layer: specify image size (eg in our case 28-by-28-by-1, corresponds to height, width, channel size where 1 = grayscale and 3 = RGB values)
   2) Convolutional Layer:first argumement is filter size (height and width of filter used while scanning along image), second argument is number of filters (number of neurons connecting to region of the output)
@@ -21,8 +30,6 @@ Reference of RT:
      * Fully Connected Layer: last fully connected layer, combining to classify the images
   4) Softmax Layer: the last activation function for a fully connected layer to normalize the probabilistic output
   5) Classification Layer: final classification of input into one of the defined mutually exclusive classes, using the probabilities returned by softmax
-
-![neuralnet](https://github.com/kelleypa/ONH/assets/107891103/f98cf840-9b17-4d41-9c78-374c9af1497f)
 
 
 The results for the deep neural network can be improved by performing back-propagation on the whole multilayer network. This process is often referred to as fine tuning.
