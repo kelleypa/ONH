@@ -11,5 +11,25 @@ Reference of RT:
 * Tavakoli, Meysam, et al. "Automated microaneurysms detection in retinal images using radon transform and supervised learning: application to mass screening of diabetic retinopathy." IEEE Access 9 (2021): 67302-67314.
 * Tavakoli, M., et al. "Radon transform technique for linear structures detection: application to vessel detection in fluorescein angiography fundus images." 2011 IEEE Nuclear Science Symposium Conference Record. IEEE, 2011.
 
-3) ONH_Training.m performs supervised learning. ONH_TrainStackedAutoencoders performs unsupervised deep learning.
-4) ONH_Segmentation.m uses the trained features or networks to do segmentation on the images. 
+3) ONH_Training.m performs supervised learning .One of our machine learning implements supervised learning, which is comprised of computing first the bag of features then categorizing this bag of features using a support vector machine (SVM).
+4) ONH_TrainStackedAutoencoders performs unsupervised deep learning.
+
+  1) Input Layer: specify image size (eg in our case 28-by-28-by-1, corresponds to height, width, channel size where 1 = grayscale and 3 = RGB values)
+  2) Convolutional Layer:first argumement is filter size (height and width of filter used while scanning along image), second argument is number of filters (number of neurons connecting to region of the output)
+     * ReLU Layer: rectified linear unit function 
+     * Max-Pooling Layer: down-sampling operation to reduce number of parameters, to avoid overfitting
+     * Fully Connected Layer: last fully connected layer, combining to classify the images
+  4) Softmax Layer: the last activation function for a fully connected layer to normalize the probabilistic output
+  5) Classification Layer: final classification of input into one of the defined mutually exclusive classes, using the probabilities returned by softmax
+
+
+![image](https://github.com/kelleypa/ONH/assets/107891103/0568db42-b89c-4c27-ac8a-2dc48c4e42b2)
+
+
+![backpropagation](https://github.com/kelleypa/ONH/assets/107891103/96229a95-e4a6-4dbf-85f7-538c9526c8f1)
+
+
+
+![image](https://github.com/kelleypa/ONH/assets/107891103/6aababc2-fc88-4b13-b3c4-95924275c201)
+
+6) ONH_Segmentation.m uses the trained features or networks to do segmentation on the images. 
