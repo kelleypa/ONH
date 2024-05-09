@@ -17,7 +17,9 @@ Reference of RT:
 </p>
 Setting aside 20% of the training set as the training test set, a validation accuracy of 0.9282 was achieved. This means that out of the 2716 candidate images, the trained classifier tested 543 candidates to achieve an accuracy of about 92%. When viewing the confusion matrix which reveals the percentage of true and false positive detections of the ONH vs nonONH, it equally missed ONHs and nonONHs at 8% of the time. But with multiple multiple candidates that contain part or the whole ONH, this is acceptable error since the other candidates are likely to be spotted. 
 
-![image](https://github.com/kelleypa/ONH/assets/107891103/9d375086-9eb9-4290-ad20-fe33af150b16)
+<p align="center" width="100%">
+  <img width="50%" src="https://github.com/kelleypa/ONH/assets/107891103/9d375086-9eb9-4290-ad20-fe33af150b16">
+</p>
 
 
 
