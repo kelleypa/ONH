@@ -17,15 +17,12 @@ Reference of RT:
 </p>
 Setting aside 20% of the training set as the training test set, a validation accuracy of 0.9282 was achieved. This means that out of the 2716 candidate images, the trained classifier tested 543 candidates to achieve an accuracy of about 92%. When viewing the confusion matrix which reveals the percentage of true and false positive detections of the ONH vs nonONH, it equally missed ONHs and nonONHs at 8% of the time. But with multiple multiple candidates that contain part or the whole ONH, this is acceptable error since the other candidates are likely to be spotted. 
 
-<p align="center" width="100%">
-  <img width="50%" src="https://github.com/kelleypa/ONH/assets/107891103/9d375086-9eb9-4290-ad20-fe33af150b16">
-</p>
-
+![image](https://github.com/kelleypa/ONH/assets/107891103/9d375086-9eb9-4290-ad20-fe33af150b16)
 
 
 4) ONH_TrainStackedAutoencoders performs unsupervised deep learning.
 <p align="center" width="100%">
-![neuralnet](https://github.com/kelleypa/ONH/assets/107891103/f98cf840-9b17-4d41-9c78-374c9af1497f)
+  <img width="50%" src="https://github.com/kelleypa/ONH/assets/107891103/f98cf840-9b17-4d41-9c78-374c9af1497f">
 </p>
   1) Input Layer: specify image size (eg in our case 28-by-28-by-1, corresponds to height, width, channel size where 1 = grayscale and 3 = RGB values)
   2) Convolutional Layer:first argumement is filter size (height and width of filter used while scanning along image), second argument is number of filters (number of neurons connecting to region of the output)
