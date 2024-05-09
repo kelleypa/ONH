@@ -28,12 +28,12 @@ ONH_TrainStackedAutoencoders performs unsupervised deep learning.
 </p>
 
 1) Input Layer: specify image size (eg in our case 28-by-28-by-1, corresponds to height, width, channel size where 1 = grayscale and 3 = RGB values)
-3) Convolutional Layer:first argumement is filter size (height and width of filter used while scanning along image), second argument is number of filters (number of neurons connecting to region of the output)
+2) Convolutional Layer: first argumement is filter size (height and width of filter used while scanning along image), second argument is number of filters (number of neurons connecting to region of the output)
    * ReLU Layer: rectified linear unit function 
    * Max-Pooling Layer: down-sampling operation to reduce number of parameters, to avoid overfitting
    * Fully Connected Layer: last fully connected layer, combining to classify the images
-4) Softmax Layer: the last activation function for a fully connected layer to normalize the probabilistic output
-5) Classification Layer: final classification of input into one of the defined mutually exclusive classes, using the probabilities returned by softmax
+3) Softmax Layer: the last activation function for a fully connected layer to normalize the probabilistic output
+4) Classification Layer: final classification of input into one of the defined mutually exclusive classes, using the probabilities returned by softmax
 
 
 The results for the deep neural network can be improved by performing back-propagation on the whole multilayer network. This process is often referred to as fine tuning.
