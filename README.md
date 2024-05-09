@@ -22,9 +22,9 @@ Setting aside 20% of the training set as the training test set, a validation acc
 
 
 4) ONH_TrainStackedAutoencoders performs unsupervised deep learning.
-
+<p align="center" width="100%">
 ![neuralnet](https://github.com/kelleypa/ONH/assets/107891103/f98cf840-9b17-4d41-9c78-374c9af1497f)
-
+</p>
   1) Input Layer: specify image size (eg in our case 28-by-28-by-1, corresponds to height, width, channel size where 1 = grayscale and 3 = RGB values)
   2) Convolutional Layer:first argumement is filter size (height and width of filter used while scanning along image), second argument is number of filters (number of neurons connecting to region of the output)
      * ReLU Layer: rectified linear unit function 
