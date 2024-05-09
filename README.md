@@ -51,5 +51,7 @@ The results for the deep neural network can be improved by performing back-propa
 ## Step 4: Optic Nerve Head Segmentation
 ONH_Segmentation.m uses the trained features or networks to do segmentation on the images.
 
-![segmentation](https://github.com/kelleypa/ONH/assets/107891103/bd8a85aa-0ea1-40f5-9f4d-00d69e6ad001)
+<p align="center" width="100%">
+  <img width="50%" src="https://github.com/kelleypa/ONH/assets/107891103/bd8a85aa-0ea1-40f5-9f4d-00d69e6ad001">
+</p>
 
