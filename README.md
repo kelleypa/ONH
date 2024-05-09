@@ -14,7 +14,6 @@ Reference of RT:
 3) ONH_Training.m performs supervised learning .One of our machine learning implements supervised learning, which is comprised of computing first the bag of features then categorizing this bag of features using a support vector machine (SVM).
 <p align="center" width="100%">
   <img width="25%" src="https://github.com/kelleypa/ONH/assets/107891103/e0c82d5b-a3c1-400b-9078-3ab9cd24ffee">
-![image](https://github.com/kelleypa/ONH/assets/107891103/e0c82d5b-a3c1-400b-9078-3ab9cd24ffee)
 </p>
 Setting aside 20% of the training set as the training test set, a validation accuracy of 0.9282 was achieved. This means that out of the 2716 candidate images, the trained classifier tested 543 candidates to achieve an accuracy of about 92%. When viewing the confusion matrix which reveals the percentage of true and false positive detections of the ONH vs nonONH, it equally missed ONHs and nonONHs at 8% of the time. But with multiple multiple candidates that contain part or the whole ONH, this is acceptable error since the other candidates are likely to be spotted. 
 
