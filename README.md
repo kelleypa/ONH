@@ -22,14 +22,15 @@ Reference of RT:
   4) Softmax Layer: the last activation function for a fully connected layer to normalize the probabilistic output
   5) Classification Layer: final classification of input into one of the defined mutually exclusive classes, using the probabilities returned by softmax
 
+![neuralnet](https://github.com/kelleypa/ONH/assets/107891103/f98cf840-9b17-4d41-9c78-374c9af1497f)
 
-![image](https://github.com/kelleypa/ONH/assets/107891103/0568db42-b89c-4c27-ac8a-2dc48c4e42b2)
+
+The results for the deep neural network can be improved by performing back-propagation on the whole multilayer network. This process is often referred to as fine tuning.
 
 
 ![backpropagation](https://github.com/kelleypa/ONH/assets/107891103/96229a95-e4a6-4dbf-85f7-538c9526c8f1)
 
 
 
-![image](https://github.com/kelleypa/ONH/assets/107891103/6aababc2-fc88-4b13-b3c4-95924275c201)
 
 6) ONH_Segmentation.m uses the trained features or networks to do segmentation on the images. 
