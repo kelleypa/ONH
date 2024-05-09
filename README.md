@@ -13,7 +13,8 @@ Reference of RT:
 
 3) ONH_Training.m performs supervised learning .One of our machine learning implements supervised learning, which is comprised of computing first the bag of features then categorizing this bag of features using a support vector machine (SVM).
 
-![image](https://github.com/kelleypa/ONH/assets/107891103/f3ef9d20-daee-4b7a-99ee-6833627ec795){:height="36px" width="36px"}.
+![image](https://github.com/kelleypa/ONH/assets/107891103/e0c82d5b-a3c1-400b-9078-3ab9cd24ffee)
+
 
 ![image](https://github.com/kelleypa/ONH/assets/107891103/9d375086-9eb9-4290-ad20-fe33af150b16)
 
