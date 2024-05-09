@@ -17,7 +17,7 @@ Reference of RT:
 
 Setting aside 20% of the training set as the training test set, a validation accuracy of 0.9282 was achieved. This means that out of the 2716 candidate images, the trained classifier tested 543 candidates to achieve an accuracy of about 92%. When viewing the confusion matrix which reveals the percentage of true and false positive detections of the ONH vs nonONH, it equally missed ONHs and nonONHs at 8% of the time. But with multiple multiple candidates that contain part or the whole ONH, this is acceptable error since the other candidates are likely to be spotted. 
 
-![image](https://github.com/kelleypa/ONH/assets/107891103/f3ef9d20-daee-4b7a-99ee-6833627ec795)
+![image =100x20](https://github.com/kelleypa/ONH/assets/107891103/f3ef9d20-daee-4b7a-99ee-6833627ec795)
 
 4) ONH_TrainStackedAutoencoders performs unsupervised deep learning.
 
